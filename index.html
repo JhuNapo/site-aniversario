@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+
+<h1 class="titulo-aniversario">
+Feliz Aniversário, meu amor ❤️🎂
+</h1>
+
+<p class="mensagem">
+Esses são alguns dos momentos felizes que tivemos...
+</p>
+
+<style>
+.titulo-aniversario {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff3366;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    color: #ff6699;
+    font-weight: normal;
+    margin-top: 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #ff3366;
+    font-size: 2.5em;
+}
+
+.mensagem {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.botao {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ff4d88;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #e6005c;
+    transform: scale(1.05);
+}
+
+.surpresa {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Nossa História ❤️</h1>
+
+<p class="mensagem">
+Eu te amo! ❤️
+</p>
+
+<div class="galeria">
+    <!-- COLOQUE SUAS FOTOS AQUI -->
+    <img src="foto1.jpg.jpeg">
+    <img src="foto2.jpg.jpeg">
+    <img src="foto3.jpg.jpeg">
+    <img src="foto4.jpg.jpeg">
+     <img src="foto5.jpg.jpeg">
+</div>
+
+<button class="botao" onclick="mostrarMensagem()">
+Clique aqui ❤️
+</button>
+
+<p id="mensagemSurpresa" class="surpresa"></p>
+
+<!-- MÚSICA -->
+<audio id="musica">
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<p id="mensagemSurpresa" class="surpresa"></p>
+
+</div>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("mensagemSurpresa").innerText =
+    "Talvez agora não seja o capítulo mais leve da nossa história… mas eu não quero pular páginas. Quero viver cada parte com você. Porque amar você nunca foi sobre facilidade, foi sobre verdade. E o que temos é real. 💕";
+}
+</script>
+<script>
+function mostrarMensagem() {
+    document.getElementById("mensagemSurpresa").innerText =
+    "Eu não estou aqui apenas pelos dias leves. Estou aqui pelos dias confusos, pelos dias silenciosos e até pelos dias difíceis. Porque amar você nunca foi sobre facilidade… foi sobre escolha. E eu escolho você. Hoje e nos próximos capítulos. 💕";
+}
+
+function tocarMusica() {
+    var audio = document.getElementById("musica");
+    audio.play();
+}
+</script>
+
+</body>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5BqKtuCFLfZyzfZOwlgW1f?utm_source=generator" width="85%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</html>
